@@ -4,8 +4,9 @@ import {useRouter } from 'next/router'
 import Nav from './header/nav'
 
 export default function Home() {
-    const router = useRouter()
-    router.push("/auth/login")
+
+    // const router = useRouter()
+    // router.push("/auth/login")
   return (
     <div>
       <Nav/>
