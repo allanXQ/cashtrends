@@ -4,14 +4,14 @@ import { useRouter } from 'next/router'
 import Nav from './header/nav'
 
 export default function Home() {
-    // Router()
+    const router = useRouter()
     router.push("/auth/login")
-  return (
-    <div>
-      <Nav/>
-      <div>
-      </div>  
+  // return (
+  //   <div>
+  //     <Nav/>
+  //     <div>
+  //     </div>  
 
-    </div>
-  )
+  //   </div>
+  // )
 }
