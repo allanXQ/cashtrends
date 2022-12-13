@@ -4,10 +4,7 @@ import { NextResponse } from 'next/server'
 export async function middleware(req,res) {
     const jwt = req.cookies.get('authToken')
     const {pathname} = req.nextUrl;
-    if(pathname == '/' || pathname == ''){
-        return NextResponse.redirect(new URL('/auth/login',req.url))
-    }
-    if(pathname.startsWith('/auth')){
+     if(pathname.startsWith('/auth')){
         if(jwt){
             try {
                 const {payload} = await jwtVerify(jwt.value,new TextEncoder().encode(process.env.JWT_SECRET))
