@@ -1,6 +1,6 @@
 import Head from 'next/head'
 // import Router from 'next/router'
-import {useRouter } from 'next/router'
+// import {useRouter } from 'next/router'
 import Nav from './header/nav'
 
 export default function Home() {
