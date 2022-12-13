@@ -1,13 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
 const Nav = () => {
-    useEffect(()=>{
-        const router = useRouter()
-        router.push("/auth/login")
-    },[])
+    
     
     const [open, setopen] = useState(false)
     const handleopen = ()=>{
